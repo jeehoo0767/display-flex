@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #wrap{
+            width: 1234px;
+            margin: 0 auto;
+        }
+        #nav-container{
+            margin-left: 20px;
+            margin: 20px;
+            display:flex;
+            justify-content: space-between;
+        }
+        .nav{
+            display:flex;
+            height: 50px;
+            border: 1px solid #e5e5e5;
+        }
+        .nav-item{
+            font-size: 30px;
+            text-align: center;
+            width: 150px;
+            padding-right: 10px;
+            line-height: 50px;
+        }
+        #main-logo{
+            width: 1234px;
+            height: 300px;
+            margin-bottom: 60px;
+            background-image: url(images/slideshow_1200_01.jpg);
+            position: relative;
+        }
+        .main-logo-content{
+            position: absolute;
+            left: 50%;
+            top: 20%;
+            transform: translate(-50%,-20%);
+            padding:0px 10px 0px 10px;
+            background-color: rgba(255,255,255,0.8);
+            border-radius: 20px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        #article{
+            margin: 0;
+            display:flex;
+            justify-content: space-between;
+        }
+        .notice{
+            border: 1px solid #aeaeae;
+            width: 407px;
+            position: relative;
+        }
+        ul{
+            line-height: 3em;
+            padding: 0px 10px 0px 10px;
+        }
+        ul li{
+           list-style: none;
+        }
+        ul li div{
+            display: inline-block;
+        }
+        .notice-content{
+            width: 300px;
+        }
+        .tab-notice1, .tab-notice2{
+            width: 106px;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            background-color: #edf0f1;
+            position: absolute;
+        }
+        .tab-notice1{
+            border: 1px solid #aeaeae;
+            border-bottom: none;
+            left: 20px;
+            top: -27.5px;
+        }
+        .tab-notice2{
+            top: -27.5px;
+            left: 129px;
+        }
+        .article-content-img{
+            margin-top: 60px;
+        }
+        #footer{
+            margin-top: 40px;
+            display:flex;
+            justify-content: space-between;
+        }
+        .footer-content-flex div{
+            display: inline-block;
+        }
+        .footer-content-flex div:nth-child(2), div:nth-child(3){
+            margin-left: 20px;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <div id="wrap">
+            <div id="nav-container">
+            <div class="item-logo">
+                <img src="images/logo_200x40.png" alt="a">
+            </div>
+            <div class="nav">
+                <div class="nav-item">탑</div>
+                <div class="nav-item">이우터</div>
+                <div class="nav-item">팬츠</div>
+                <div class="nav-item">악세사리</div>
+            </div>
+        </div>
+
+        <div id="main-logo">
+            <div class="main-logo-content">
+                <p>구속없는 자연스러운 배기팬츠</p>
+                <p>Cool wide pants 시원함을 입다</p>
+                <p>요즘대세 10% 린넨 셔츠</p>        
+            </div>
+        </div>
+
+        <div id="article">
+            <div class="notice">
+                <ul>
+                    <li><div class="notice-content">2018하반기 직원채용</div><div>2018-10-19</div></li>
+                    <li><div class="notice-content">입금자를 찾습니다.</div><div>2018-10-19</div></li>
+                    <li><div class="notice-content">5월 런칭 이벤트 회원 모집</div><div>2018-10-19</div></li>
+                    <li><div class="notice-content">1+1 행사를 진행합니다.</div><div>2018-10-19</div></li>
+                </ul>
+                <div class="tab-notice1">공지사항</div>
+                <div class="tab-notice2">갤러리</div>
+            </div>
+            <div class="article-content-img"><img src="images/banner_339_86.png" alt="a"></div>
+            <div class="article-content-img"><img src="images/shortcut_339_122.png" alt="a"></div>
+        </div>
+
+        <div id="footer">
+            <div class="footer-logo"><img src="images/logo_140x30.png" alt="v"></div>
+            <div class="footer-content">
+                <div class="footer-content-flex">
+                    <div>법적고지</div>
+                    <div>개인정보취급방침</div>
+                    <div>개인정보처리방침</div>
+                </div>
+                    <div>전화번호 : (059) 200-3000 사업자등록번호 : 6XX-0X-00000 대표자  : OOO<br>
+                    &copy; J Corporation. all rights reversed
+                    </div>
+                </div>
+            
+                <div class="footer-sns-logo">
+                    <img src="images/facebook.png" alt="a">
+                    <img src="images/instagram.png" alt="a">
+                    <img src="images/twitter.png" alt="a">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
