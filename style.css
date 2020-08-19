@@ -1,0 +1,116 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+}
+#wrap{
+    width: 1234px;
+    margin: 0 auto;
+}
+#nav-container{
+    margin-left: 20px;
+    margin: 20px;
+    display:flex;
+    justify-content: space-between
+}
+.nav .main-menu{
+    border: 1px solid #999;
+    background: rgba(206, 206, 206,0.2);
+}
+.nav li a {
+    color: black;
+    display: block;
+    width: 100px;
+    font-size: 20px;
+    text-decoration:none;
+    text-align: center;
+}
+
+.sub-menu{
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    display:none;
+    background: rgba(206, 206, 206,0.2);
+}
+.main-menu>li {
+    font-weight: bold;
+    float: left;
+    position: relative;
+}
+
+.main-menu::after{
+    content: "";
+    display:block;
+    clear: both;
+}
+
+#main-logo{
+    width: 1234px;
+    height: 300px;
+    margin-bottom: 60px;
+    background-image: url(images/slideshow_1200_01.jpg);
+    position: relative;
+}
+.main-logo-content{
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%,-20%);
+    padding:0px 10px 0px 10px;
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#article{
+    margin: 0;
+    display:flex;
+    justify-content: space-between;
+}
+.notice{
+    border: 1px solid #aeaeae;
+    width: 407px;
+    position: relative;
+}
+ul li{
+   list-style: none;
+}
+ul li div{
+    display: inline-block;
+}
+.notice-content{
+    width: 300px;
+}
+.tab-notice1, .tab-notice2{
+    width: 106px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #edf0f1;
+    position: absolute;
+}
+.tab-notice1{
+    border: 1px solid #aeaeae;
+    border-bottom: none;
+    left: 20px;
+    top: -27.5px;
+}
+.tab-notice2{
+    top: -27.5px;
+    left: 129px;
+}
+.article-content-img{
+    margin-top: 60px;
+}
+#footer{
+    margin-top: 40px;
+    display:flex;
+    justify-content: space-between;
+}
+.footer-content-flex div{
+    display: inline-block;
+}
+.footer-content-flex div:nth-child(2), div:nth-child(3){
+    margin-left: 20px;
+}
